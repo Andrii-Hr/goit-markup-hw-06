@@ -255,6 +255,7 @@ max-width: 1200px;
 .container-footer {
 display: flex;
 align-items: center;
+
     
 }
 .cont-portfolio {
@@ -426,17 +427,23 @@ align-items: center;
   }
   
   .form-label {
-    position: absolute;
-    top: -20px;
-    left: 0;
-    
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: -20px;
+  left: 0;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
   
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: var(--title-text-color);
-    
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+  letter-spacing: 0.01em;
+  color: var(--title-text-color);
+  
   }
     
   .form-input:focus {
@@ -489,10 +496,10 @@ align-items: center;
     position: absolute;
     top: 50%;
     left: 12px;
-    fill: var(--title-text-color);
+    fill: var(--primary-text-color);
   
     transform: translateY(-50%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   }
   
   .form-input:focus ~ .form-icon {
@@ -578,17 +585,18 @@ align-items: center;
   
   .close-button {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 5px;
     width: 30px;
     height: 30px;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    box-shadow: 0px 2px 1px rgb(0 0 0 / 20%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%);
+    /* box-shadow: 0px 2px 1px rgb(0 0 0 / 20%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 1px 3px rgb(0 0 0 / 12%); */
     background-color: var(--main-bg-color);    
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
+    align-items: center;
     margin: 0px;
     padding: 5px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -913,6 +921,8 @@ text-decoration: none;
 .footer-subscribe{
     padding-top: 72px;
     padding-bottom: 94px;
+    margin-left: 93px;
+    
 
 }
 .footer-text{
@@ -922,7 +932,6 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.15;
 color: var(--primary-white-color);
-margin-left: 93px;
 margin-bottom: 20px;
 
 
@@ -935,7 +944,7 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.9;
 padding-left: 28px;
-width: 200px;
+min-width: 200px;
 display: flex;
 align-items: center;
 text-align: center;
@@ -948,6 +957,7 @@ transition-property: color, background-color;
 transition-duration: 250ms;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+padding-right: 28px;
 }
 
 .icon-telegram{
@@ -957,27 +967,22 @@ align-items: center;
 text-align: center; 
 padding-top: 10px;
 padding-bottom: 10px;
-padding-right: 28px;
 }
 
 .footer-email{
 display: flex;
-gap: 12px;
-margin-left: 93px;
-
 }
+
 .footer-email-text{
 color: rgba(255, 255, 255, 0.6);
 background-color: transparent;
 padding-left: 16px;
-width: 358px;
+min-width: 358px;
 border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 5px;
 box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.15));
-
-  }
-  
-
+margin-right: 12px;
+}
 
 /* PORTFOLIO */
 .portfolio-body {
